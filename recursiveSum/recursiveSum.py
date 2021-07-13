@@ -14,6 +14,8 @@ def recursiveCount(arr: []):
 def recursiveMax(arr: [int]):
     if len(arr) == 2: 
         return arr[0] if (arr[0] > arr[1]) else arr[1]
+    elif len(arr) == 1:
+        return arr[0]
     else :
         firstValue = recursiveMax(arr[:2])
         secondValue = recursiveMax(arr[2:])
@@ -23,4 +25,4 @@ def recursiveMax(arr: [int]):
         
 print(recursiveSum([1,2,3, 10]))
 print(recursiveCount(['a', 'b', 'c']))
-print(recursiveMax([11,2,3, 10]))
+print(recursiveMax([11,2,3, 10, 15]))
