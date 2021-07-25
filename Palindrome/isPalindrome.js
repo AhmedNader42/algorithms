@@ -10,7 +10,7 @@ var isPalindrome = function (x) {
     }
 
     const strX = x.toString();
-    const reversedX = strX.split("").reverse().join("");
+    const reversedX = strX.split("").reverse();
     for (let i = 0; i < strX.length; i++) {
         if (strX[i] !== reversedX[i]) {
             return false;
